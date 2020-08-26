@@ -24,7 +24,7 @@
     <!-- nav bar with logo & website -->
     <nav>
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo left">cookingcalculator.com</a>
+            <a href="#" class="left">cookingcalculator.com</a>
         </div>
     </nav>
 
@@ -32,9 +32,9 @@
     <!-- note this should be inside a bordered box -->
     <div class="container">
         <h2>Measurment Conversion Calculator</h2>
-        <p>Easily convert between cups, tablespoons, teaspoons, ounces, pints, quarts, liters, grams, and other cooking
+        <h5>Easily convert between cups, tablespoons, teaspoons, ounces, pints, quarts, liters, grams, and other cooking
             units.
-        </p>
+        </h5>
     </div>
 
     <!-- value input and value drop downs -->
@@ -42,17 +42,69 @@
 
     <div class="row">
         <div class="col s12">
+            <!-- value is not listed without a tag becuase it would not formatt correctly/ open to suggestions -->
             Value:
             <div class="input-field inline">
                 <input id="value_inline" type="value" class="validate">
             </div>
         </div>
     </div>
+    <!-- dropdown current value -->
+    <div class="row">
+        <div class="col s12">
+            Convert value from:
+            <select class="browser-default">
+                <option value="" disabled selected>Select your current value</option>
+                <option value="1">Teaspoons</option>
+                <option value="2">Tablespoons</option>
+                <option value="3">Fluid ounces</option>
+                <option value="4">Cups</option>
+                <option value="5">Pint</option>
+                <option value="6">Quart</option>
+                <option value="7">Gallon</option>
+                <option value="8">Milliters</option>
+                <option value="9">Grams</option>
+                <option value="10">Pounds</option>
+            </select>
+        </div>
+    </div>
+    <!-- dropdown desired value -->
+    <div class="row">
+        <div class="col s12">
+            Convert value to:
+            <select class="browser-default">
+                <option value="" disabled selected>Select your desired value</option>
+                <option value="1">Teaspoons</option>
+                <option value="2">Tablespoons</option>
+                <option value="3">Fluid ounces</option>
+                <option value="4">Cups</option>
+                <option value="5">Pint</option>
+                <option value="6">Quart</option>
+                <option value="7">Gallon</option>
+                <option value="8">Milliters</option>
+                <option value="9">Grams</option>
+                <option value="10">Pounds</option>
+            </select>
+        </div>
+    </div>
 
+    <!-- buttons -->
+    <a class="waves-effect waves-light btn">Convert</a>
+    <a class="waves-effect waves-light btn">Reset</a>
 
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- result input -->
+    <div class="row">
+        <div class="col s12">
+            Result:
+            <div class="input-field inline">
+                <input id="value_inline" type="value" class="validate">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
