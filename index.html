@@ -1,11 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooking Calculator</title>
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Import fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Cooking Calulator</title>
 </head>
+
 <body>
-    
+    <!-- nav bar with logo & website -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="left">cookingcalculator.com</a>
+        </div>
+    </nav>
+
+    <!-- title and instructions -->
+    <!-- note this should be inside a bordered box -->
+    <div class="container">
+        <h2>Measurment Conversion Calculator</h2>
+        <h5>Easily convert between cups, tablespoons, teaspoons, ounces, pints, quarts, liters, grams, and other cooking
+            units.
+        </h5>
+    </div>
+
+    <!-- value input and value drop downs -->
+
+
+    <div class="row">
+        <div class="col s12">
+            <!-- value is not listed without a tag becuase it would not formatt correctly/ open to suggestions -->
+            Value:
+            <div class="input-field inline">
+                <input id="value_inline" type="value" class="validate">
+            </div>
+        </div>
+    </div>
+    <!-- dropdown current value -->
+    <div class="row">
+        <div class="col s12">
+            Convert value from:
+            <select class="browser-default">
+                <option value="" disabled selected>Select your current value</option>
+                <option value="1">Teaspoons</option>
+                <option value="2">Tablespoons</option>
+                <option value="3">Fluid ounces</option>
+                <option value="4">Cups</option>
+                <option value="5">Pint</option>
+                <option value="6">Quart</option>
+                <option value="7">Gallon</option>
+                <option value="8">Milliters</option>
+                <option value="9">Grams</option>
+                <option value="10">Pounds</option>
+            </select>
+        </div>
+    </div>
+    <!-- dropdown desired value -->
+    <div class="row">
+        <div class="col s12">
+            Convert value to:
+            <select class="browser-default">
+                <option value="" disabled selected>Select your desired value</option>
+                <option value="1">Teaspoons</option>
+                <option value="2">Tablespoons</option>
+                <option value="3">Fluid ounces</option>
+                <option value="4">Cups</option>
+                <option value="5">Pint</option>
+                <option value="6">Quart</option>
+                <option value="7">Gallon</option>
+                <option value="8">Milliters</option>
+                <option value="9">Grams</option>
+                <option value="10">Pounds</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- buttons -->
+    <a class="waves-effect waves-light btn">Convert</a>
+    <a class="waves-effect waves-light btn">Reset</a>
+
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- result input -->
+    <div class="row">
+        <div class="col s12">
+            Result:
+            <div class="input-field inline">
+                <input id="value_inline" type="value" class="validate">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
