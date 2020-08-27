@@ -1,0 +1,110 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+    /* This is our styling for our NAVBAR */
+    .nav-wrapper {
+        background-color: black;
+        color: white;
+        font-size: 150%;
+        vertical-align: middle;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    /* This is styling for the Measurement Conversion Calculator header and description container */
+    #header {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: 900;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(172, 172, 172);
+        background-color: rgb(240, 240, 240);
+    }
+
+    /* This is styling for the conversion metrics & results */
+    #conversion {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        padding: 20px;
+        vertical-align: middle;
+        border-width: 2px;
+        border-style: solid;
+        border-color: rgb(172, 172, 172);
+        background-color: rgb(240, 240, 240);
+    }
+
+        /* This is styling for the "Value" row" */
+        #value {
+            padding-right: 50px;
+            float: left;
+            text-align: right;
+        }
+
+        /* This is styling for the "Value" text box */
+        #value-Text {
+            float: left;
+        }
+
+        /* This is styling for the "current value from" prompt */
+        #convert-From {
+            padding-right: 50px;
+            float: left;
+            text-align: right;
+        }
+
+        /* This is styling for the "convert-From-Values" drop down */
+        #convert-From-Values {
+            float: left;
+        }
+
+        /* This is styling for the "Convert to" prompt */
+        #convert-To {
+            padding-right: 50px;
+            float: left;
+            text-align: right;
+        }
+
+        /* This is styling for the "Convert To Values drop down
+        #convert-To-Values {
+            float: left;
+        } */
+
+        /* This is our button column styling */
+        #buttons {
+            padding-right: 50px;
+        }
+
+        /* This is our "Result" prompt styling */
+        #result {
+            text-align: left;
+        }
+
+        /* This is our returned results field styling */
+        #resultField {
+            float: right;
+            text-align: center;
+        }
+
+
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
