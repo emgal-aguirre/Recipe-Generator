@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/CSS/style.css" />
 
     <title>Cooking Calulator</title>
 </head>
@@ -30,81 +30,89 @@
 
     <!-- title and instructions -->
     <!-- note this should be inside a bordered box -->
-    <div class="container">
+    <div class="container" id="header">
         <h2>Measurment Conversion Calculator</h2>
         <h5>Easily convert between cups, tablespoons, teaspoons, ounces, pints, quarts, liters, grams, and other cooking
             units.
         </h5>
     </div>
 
-    <!-- value input and value drop downs -->
+    
 
+    <!-- value input and value drop downs container-->
+    <div class="container" id="conversion">
 
-    <div class="row">
-        <div class="col s12">
-            <!-- value is not listed without a tag becuase it would not formatt correctly/ open to suggestions -->
-            Value:
-            <div class="input-field inline">
-                <input id="value_inline" type="value" class="validate">
+        <div class="row">
+            <div class="col s6" id="value"><h4>Value:</h4></div>
+            <div class="col s6" id="value-Text">
+                <div class="input-field inline">
+                    <input id="value_inline" type="value" class="validate">
+                </div>
             </div>
         </div>
-    </div>
-    <!-- dropdown current value -->
-    <div class="row">
-        <div class="col s12">
-            Convert value from:
-            <select class="browser-default">
-                <option value="" disabled selected>Select your current value</option>
-                <option value="1">Teaspoons</option>
-                <option value="2">Tablespoons</option>
-                <option value="3">Fluid ounces</option>
-                <option value="4">Cups</option>
-                <option value="5">Pint</option>
-                <option value="6">Quart</option>
-                <option value="7">Gallon</option>
-                <option value="8">Milliters</option>
-                <option value="9">Grams</option>
-                <option value="10">Pounds</option>
-            </select>
-        </div>
-    </div>
-    <!-- dropdown desired value -->
-    <div class="row">
-        <div class="col s12">
-            Convert value to:
-            <select class="browser-default">
-                <option value="" disabled selected>Select your desired value</option>
-                <option value="1">Teaspoons</option>
-                <option value="2">Tablespoons</option>
-                <option value="3">Fluid ounces</option>
-                <option value="4">Cups</option>
-                <option value="5">Pint</option>
-                <option value="6">Quart</option>
-                <option value="7">Gallon</option>
-                <option value="8">Milliters</option>
-                <option value="9">Grams</option>
-                <option value="10">Pounds</option>
-            </select>
-        </div>
-    </div>
 
-    <!-- buttons -->
-    <a class="waves-effect waves-light btn">Convert</a>
-    <a class="waves-effect waves-light btn">Reset</a>
-
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="script.js"></script>
-
-    <!-- result input -->
-    <div class="row">
-        <div class="col s12">
-            Result:
-            <div class="input-field inline">
-                <input id="value_inline" type="value" class="validate">
+        <!-- dropdown current value -->
+        <div class="row">
+            <div class="col s6" id="convert-From"><h4>Convert value from:</h4></div>
+            <div class="col s6" id="convert-From-Values">
+                <select class="browser-default">
+                    <option value="" disabled selected>Select your current value</option>
+                    <option value="1">Teaspoons</option>
+                    <option value="2">Tablespoons</option>
+                    <option value="3">Fluid ounces</option>
+                    <option value="4">Cups</option>
+                    <option value="5">Pint</option>
+                    <option value="6">Quart</option>
+                    <option value="7">Gallon</option>
+                    <option value="8">Milliters</option>
+                    <option value="9">Grams</option>
+                    <option value="10">Pounds</option>
+                </select>
             </div>
         </div>
+
+        <!-- dropdown desired value -->
+        <div class="row">
+            <div class="col s6" id="convert-To"><h4>Convert value to:</h4></div>
+            <div class="col s6" id="convert-To-Values">
+                <select class="browser-default">
+                    <option value="" disabled selected>Select your desired value</option>
+                    <option value="1">Teaspoons</option>
+                    <option value="2">Tablespoons</option>
+                    <option value="3">Fluid ounces</option>
+                    <option value="4">Cups</option>
+                    <option value="5">Pint</option>
+                    <option value="6">Quart</option>
+                    <option value="7">Gallon</option>
+                    <option value="8">Milliters</option>
+                    <option value="9">Grams</option>
+                    <option value="10">Pounds</option>
+                </select>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <!-- buttons -->
+            <div class="col s6" id="buttons">
+                <a class="waves-effect waves-light btn" id="convert">Convert</a>
+                <a class="waves-effect waves-light btn" id="reset">Reset</a>
+            </div>
+            <!-- result input -->
+            <div class="col s3" id="result"><h5>Result:</h5></div>
+            <div class="col s3" id="resultField">
+                <div class="input-field inline">
+                    <input id="value_inline" type="value" class="validate">
+                </div>
+            </div>
+
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="script.js"></script>
+        </div>
+
     </div>
+
 </body>
 
 </html>
