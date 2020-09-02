@@ -75,47 +75,33 @@ body {
         background-color: rgb(240, 253, 253);
     }
 
-        /* This is styling for the "Value" row" */
-        #value {
-            padding-right: 100px;
-            float: left;
-            text-align: right;
-        }
-
-        /* This is styling for the "Value" text box */
-        #value-Text {
-            float: left;
-            width: 300px;
-            padding-top: 16px;
-        }
-
         /* This is styling for the "current value from" prompt */
-        #convert-From {
+        #meal-type {
             padding-right: 100px;
             float: left;
             text-align: right;
         }
 
         /* This is styling for the "convert-From-Values" drop down */
-        #convert-From-Values {
+        #meal-type-values {
             float: left;
             width: 300px;
             padding-top: 11px;
         }
 
         /* This is styling for the "Convert to" prompt */
-        #convert-To {
+        /* #convert-To {
             padding-right: 100px;
             float: left;
             text-align: right;
-        }
+        } */
 
         /* This is styling for the "Convert To Values drop down */
-        #convert-To-Values {
+        /* #convert-To-Values {
             float: left;
             width: 300px;
             padding-top: 11px;
-        }
+        } */
 
         /* This is our button column styling */
         #buttons {
@@ -136,14 +122,13 @@ body {
         }
 
         /* This is our "Result" prompt styling */
-        #result {
+        /* #result {
             text-align: left;
-            width: 50px;
-        }
+        } */
 
         /* This is our returned results field styling */
         #resultField {
-            padding-top: 2px;
+            padding-bottom: 30px;
             padding-left: 75px;
         }
 

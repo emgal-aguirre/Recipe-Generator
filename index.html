@@ -20,7 +20,7 @@
     <!-- Link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Easy Recipe</title>
+    <title>Random Recipe</title>
 </head>
 
 <body>
@@ -30,10 +30,7 @@
             <!-- Frying pan logo for navbar -->
             <!-- <<<<<<< HEAD  -->
             <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan" />
-            <a href="#" class="left">easyrecipe.com</a>
-
-            <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan" />
-            <a href="#" class="left">cookingcalculator.com</a>
+            <a href="#" class="left">randomrecipe.com</a>
 
         </div>
     </nav>
@@ -47,8 +44,8 @@
     <!-- title and instructions -->
     <!-- note this should be inside a bordered box -->
     <div class="container" id="header">
-        <h2>Easy Recipe!</h2>
-        <h5>Choose a desired cuisine type and meal type for results
+        <h2>Random Recipe!</h2>
+        <h5>Choose a desired meal type to receive a random recipe!
         </h5>
     </div>
 
@@ -59,23 +56,11 @@
 
         <!-- dropdown current value -->
         <div class="row">
-            <div class="col s6" id="value">
-                <h4>Value:</h4>
-            </div>
-            <div class="col s6" id="value-Text">
-                <div class="input-field inline">
-                    <input id="value_inline" type="value" class="validate">
-                </div>
-            </div>
-        </div>
-
-        <!-- dropdown current value -->
-        <div class="row">
-            <div class="col s6" id="convert-From">
+            <div class="col s6" id="meal-type">
                 <h4>Meal Type:</h4>
             </div>
 
-            <div class="col s6" id="convert-From-Values">
+            <div class="col s6" id="meal-type-values">
                 <select class="browser-default selector1">
                     <option value="" disabled selected>Select your meal type:</option>
                     <option value="Breakfast" id="breakfast">Breakfast</option>
@@ -87,50 +72,24 @@
             </div>
         </div>
 
-        <!-- dropdown desired value -->
-        <div class="row">
-            <div class="col s6" id="convert-To">
-                <h4>Cuisine Type</h4>
-            </div>
-            <div class="col s6" id="convert-To-Values">
-                <select class="browser-default selector2">
-                    <option value="" disabled selected>Select your desired quisine type:</option>
-                    <option value="American" id="american">American</option>
-                    <option value="Asian" id="asian">Asian</option>
-                    <option value="British" id="british">British</option>
-                    <option value="Caribbean" id="caribbean">Caribbean</option>
-                    <option value="Central Europe" id="central-europe">Central Europe</option>
-                    <option value="Chinese" id="chinese">Chinese</option>
-                    <option value="Eastern Europe" id="eastern-europe">Eastern Europe</option>
-                    <option value="French" id="french">French</option>
-                    <option value="Indian" id="indian">Indian</option>
-                    <option value="Italian" id="italian">Italian</option>
-                    <option value="Japanese" id="japanese">Japanese</option>
-                    <option value="Kosher" id="kosher">Kosher</option>
-                    <option value="Mediterranean" id="mediterranean">Mediterranean</option>
-                    <option value="Mexican" id="mexican">Mexican</option>
-                    <option value="Middle Eastern" id="middle-eastern">Middle Eastern</option>
-                    <option value="Nordic" id="nordic">Nordic</option>
-                    <option value="South American" id="south-american">South American</option>
-                    <option value="South East Asian" id="south-east-asian">South East Asian</option>
-                </select>
-            </div>
-        </div>
-
-
         <div class="row">
             <!-- buttons -->
             <div class="col s6" id="buttons">
                 <a class="waves-effect waves-light btn" id="convert">Show Recipe!</a>
                 <a class="waves-effect waves-light btn" id="reset">Reset</a>
             </div>
-            <!-- result input -->
-            <div class="col s3" id="result">
-                <h5>Result:</h5>
-            </div>
-            <div class="col s3" id="resultField">
+            <!-- result output -->
+            <div class="col s6" id="resultField">
                 <div class="input-field inline">
-                    <input id="value_inline2" type="value" class="validate">
+                    <h5 id=recipeTitle></h5>
+                    <br>
+                    <h6 id=recipeCalories></h6>
+                    <br>
+                    <h6 id=recipeIngredients></h6>
+                    <br>
+                    <h6 id=healthLabels></h6>
+                    <br>
+                    <h6 id=cautions></h6>
                 </div>
             </div>
 

@@ -57,21 +57,31 @@ $(document).ready(function () {
 });
 //````````````````````````````````````````````````````````````````````````````
 
-// recipie api
-var apiId = "83268794"
-var apiKey = "d627b0da7ed52c774f684c8f9a89210a";
-var mealType = ["Breakfast", "Lunch", "Dinner", "Snack", "Teatime"];
-var cuisineType = ["American", "Asian", "British", "Caribbean", "Central Europe", "Chinese", "Eastern Europe", "French", "Indian", "Italian", "Japanese", "Kosher", "Mediterranean", "Mexican", "Middle Eastern", "Nordic", "South American", "South East Asian"]
-
-$("#convert").on("click", function (cuisineType) {
-  var queryURL = `https://api.edamam.com/search?q=chicken&app_id=${apiId}&app_key=${apiKey}&from=0&to=3&calories=591-722&health=alcohol-free`
+$("#convert").on("click", function () {
+  // recipe api
+  var apiId = "83268794"
+  var apiKey = "d627b0da7ed52c774f684c8f9a89210a";
+  var mealType = $(".selector1").val()
+  var queryURL = `https://api.edamam.com/search?q=${mealType}&app_id=${apiId}&app_key=${apiKey}`
 
   $.ajax({
     url: queryURL,
     method: "GET"
   }).then(function (response) {
-    console.log(queryURL);
-    console.log(response);
-
+    $("#recipeTitle").text(
+      "Title:    " + response.hits[0].recipe.label
+    )
+    $("#recipeCalories").text(
+      "Calories:    " + response.hits[0].recipe.calories
+    )
+    $("#recipeIngredients").text(
+      "Ingredients:    " + response.hits[0].recipe.ingredientLines
+    )
+    $("#healthLabels").text(
+      "Health:    " + response.hits[0].recipe.healthLabels
+    )
+    $("#cautions").text(
+      "Warnings:    " + response.hits[0].recipe.cautions
+    )
   })
 })
