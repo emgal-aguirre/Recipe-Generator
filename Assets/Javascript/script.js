@@ -57,6 +57,7 @@ $(document).ready(function () {
 });
 //````````````````````````````````````````````````````````````````````````````
 
+
 $("#convert").on("click", function () {
   // recipe api
   var apiId = "83268794"
@@ -68,20 +69,24 @@ $("#convert").on("click", function () {
     url: queryURL,
     method: "GET"
   }).then(function (response) {
+    var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+    var index = Math.floor(Math.random() * response.hits.length)
+    console.log(index);
+
     $("#recipeTitle").text(
-      "Title:    " + response.hits[0].recipe.label
+      "Title:    " + response.hits[index].recipe.label
     )
     $("#recipeCalories").text(
-      "Calories:    " + response.hits[0].recipe.calories
+      "Calories:    " + response.hits[index].recipe.calories.Math.floor
     )
     $("#recipeIngredients").text(
-      "Ingredients:    " + response.hits[0].recipe.ingredientLines
+      "Ingredients:    " + response.hits[index].recipe.ingredientLines
     )
     $("#healthLabels").text(
-      "Health:    " + response.hits[0].recipe.healthLabels
+      "Health:    " + response.hits[index].recipe.healthLabels
     )
     $("#cautions").text(
-      "Warnings:    " + response.hits[0].recipe.cautions
+      "Warnings:    " + response.hits[index].recipe.cautions
     )
   })
 })
