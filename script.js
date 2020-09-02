@@ -18,6 +18,7 @@ console.log($(".selector2").val());
   var z = JSON.stringify(x) + JSON.stringify(y);
   var x = $(".selector1").val();
   var y = $(".selector2").val();
+
   
 var test = function(k){
   
@@ -25,8 +26,11 @@ var test = function(k){
 //Funciton combinations go here. This is a demo.
 //This function works--no, it defaults to the else statement
 if (x > y) {
+  console.log("inside if")
   return k / 3;
-} else { return k / 2;}
+} else { 
+  console.log("inside else")
+   return k / 2;}
 //var z = JSON.stringify(x) + JSON.stringify(y);
 
 
