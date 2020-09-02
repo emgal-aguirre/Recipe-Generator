@@ -31,16 +31,16 @@
     <nav>
         <div class="nav-wrapper">
             <!-- Frying pan logo for navbar -->
-            <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan"/>
+            <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan" />
             <a href="#" class="left">cookingcalculator.com</a>
         </div>
     </nav>
 
     <!-- Chef measuring ingredients logo for main body of page -->
-    <img src="Assets/Images/Cartoon Chef Following Instructions.jpg" id="chef"/>
+    <img src="Assets/Images/Cartoon Chef Following Instructions.jpg" id="chef" />
 
     <!-- Happy measuring cup logo -->
-    <img src="Assets/Images/Cartoon Measuring Cup.jpg" id="cup"/>
+    <img src="Assets/Images/Cartoon Measuring Cup.jpg" id="cup" />
 
     <!-- title and instructions -->
     <!-- note this should be inside a bordered box -->
@@ -51,13 +51,15 @@
         </h5>
     </div>
 
-    
+
 
     <!-- value input and value drop downs container-->
     <div class="container" id="conversion">
 
         <div class="row">
-            <div class="col s6" id="value"><h4>Value:</h4></div>
+            <div class="col s6" id="value">
+                <h4>Value:</h4>
+            </div>
             <div class="col s6" id="value-Text">
                 <div class="input-field inline">
                     <input id="value_inline" type="value" class="validate">
@@ -67,7 +69,9 @@
 
         <!-- dropdown current value -->
         <div class="row">
-            <div class="col s6" id="convert-From"><h4>Convert value from:</h4></div>
+            <div class="col s6" id="convert-From">
+                <h4>Convert value from:</h4>
+            </div>
             <div class="col s6" id="convert-From-Values">
                 <select class="browser-default selector1">
                     <option value="" disabled selected>Select your current value</option>
@@ -87,7 +91,9 @@
 
         <!-- dropdown desired value -->
         <div class="row">
-            <div class="col s6" id="convert-To"><h4>Convert value to:</h4></div>
+            <div class="col s6" id="convert-To">
+                <h4>Convert value to:</h4>
+            </div>
             <div class="col s6" id="convert-To-Values">
                 <select class="browser-default selector2">
                     <option value="" disabled selected>Select your desired value</option>
@@ -105,27 +111,48 @@
             </div>
         </div>
 
-        
+
         <div class="row">
             <!-- buttons -->
             <div class="col s6" id="buttons">
-                <a class="waves-effect waves-light btn" id="convert">Convert</a>
-                <a class="waves-effect waves-light btn" id="reset">Reset</a>
+                <a class="waves-effect waves-light btn" id="convert-btn">Convert</a>
+                <a class="waves-effect waves-light btn" id="reset-btn">Reset</a>
+                <a class="waves-effect waves-light btn" id="search-btn">Test</a>
             </div>
             <!-- result input -->
-            <div class="col s3" id="result"><h5>Result:</h5></div>
+            <div class="col s3" id="result">
+                <h5>Result:</h5>
+            </div>
             <div class="col s3" id="resultField">
                 <div class="input-field inline">
                     <input id="value_inline2" type="value" class="validate">
                 </div>
             </div>
 
-        <script type="text/javascript" src="https://materializecss.com/getting-started.html"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="script.js"></script>
-        </div>
+            <!-- recipie container -->
+            <div class="card body m-4 p-5 result">
+                <div class="col-12">
+                    <h3 class="recipe-name">Recipe Title</h3>
+                    <p id="recipe-name" class="lead"></p>
 
-    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-6 p-4">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item cusine-type result">cusine type</li>
+                            <li class="list-group-item meal-type result">meal type</li>
+                        </ul>
+                    </div>
+
+                    <script type="text/javascript" src="https://materializecss.com/getting-started.html"></script>
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script src="script.js"></script>
+                </div>
+
+            </div>
+
 
 </body>
 
