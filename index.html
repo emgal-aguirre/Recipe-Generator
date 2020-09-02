@@ -20,7 +20,7 @@
     <!-- Link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Cooking Calulator</title>
+    <title>Easy Recipe</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
         <div class="nav-wrapper">
             <!-- Frying pan logo for navbar -->
             <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan"/>
-            <a href="#" class="left">cookingcalculator.com</a>
+            <a href="#" class="left">easyrecipe.com</a>
         </div>
     </nav>
 
@@ -42,9 +42,8 @@
     <!-- title and instructions -->
     <!-- note this should be inside a bordered box -->
     <div class="container" id="header">
-        <h2>Measurement Conversion Calculator</h2>
-        <h5>Easily convert between cups, tablespoons, teaspoons, ounces, pints, quarts, liters, grams, and other cooking
-            units.
+        <h2>Easy Recipe!</h2>
+        <h5>Choose a desired cuisine type and meal type for results
         </h5>
     </div>
 
@@ -53,47 +52,45 @@
     <!-- value input and value drop downs container-->
     <div class="container" id="conversion">
 
-        <div class="row">
-            <div class="col s6" id="value"><h4>Value:</h4></div>
-            <div class="col s6" id="value-Text">
-                <div class="input-field inline">
-                    <input id="value_inline" type="value" class="validate">
-                </div>
-            </div>
-        </div>
-
         <!-- dropdown current value -->
         <div class="row">
-            <div class="col s6" id="convert-From"><h4>Convert value from:</h4></div>
+            <div class="col s6" id="convert-From"><h4>Meal Type</h4></div>
             <div class="col s6" id="convert-From-Values">
                 <select class="browser-default selector1">
-                    <option value="" disabled selected>Select your current value</option>
-                    <option value="1">Teaspoons</option>
-                    <option value="2">Tablespoons</option>
-                    <option value="3">Fluid ounces</option>
-                    <option value="4">Cups</option>
-                    <option value="5">Pint</option>
-                    <option value="6">Quart</option>
-                    <option value="7">Gallon</option>
-                    <option value="8">Milliters</option>
+                    <option value="" disabled selected>Select your meal type:</option>
+                    <option value="Breakfast" id="breakfast">Breakfast</option>
+                    <option value="Lunch" id="Lunch">Lunch</option>
+                    <option value="Dinner" id="dinner">Dinner</option>
+                    <option value="Snack" id="snack">Snack</option>
+                    <option value="Teatime" id="teaTime">Teatime</option>
                 </select>
             </div>
         </div>
 
         <!-- dropdown desired value -->
         <div class="row">
-            <div class="col s6" id="convert-To"><h4>Convert value to:</h4></div>
+            <div class="col s6" id="convert-To"><h4>Cuisine Type</h4></div>
             <div class="col s6" id="convert-To-Values">
                 <select class="browser-default selector2">
-                    <option value="" disabled selected>Select your desired value</option>
-                    <div value="1">Teaspoons</div>
-                    <option value="2">Tablespoons</option>
-                    <option value="3">Fluid ounces</option>
-                    <option value="4">Cups</option>
-                    <option value="5">Pint</option>
-                    <option value="6">Quart</option>
-                    <option value="7">Gallon</option>
-                    <option value="8">Milliters</option>
+                    <option value="" disabled selected>Select your desired quisine type:</option>
+                    <option value="American" id="american">American</option>
+                    <option value="Asian" id="asian">Asian</option>
+                    <option value="British" id="british">British</option>
+                    <option value="Caribbean" id="caribbean">Caribbean</option>
+                    <option value="Central Europe" id="central-europe">Central Europe</option>
+                    <option value="Chinese" id="chinese">Chinese</option>
+                    <option value="Eastern Europe" id="eastern-europe">Eastern Europe</option>
+                    <option value="French" id="french">French</option>
+                    <option value="Indian" id="indian">Indian</option>
+                    <option value="Italian" id="italian">Italian</option>
+                    <option value="Japanese" id="japanese">Japanese</option>
+                    <option value="Kosher" id="kosher">Kosher</option>
+                    <option value="Mediterranean" id="mediterranean">Mediterranean</option>
+                    <option value="Mexican" id="mexican">Mexican</option>
+                    <option value="Middle Eastern" id="middle-eastern">Middle Eastern</option>
+                    <option value="Nordic" id="nordic">Nordic</option>
+                    <option value="South American" id="south-american">South American</option>
+                    <option value="South East Asian" id="south-east-asian">South East Asian</option>
                 </select>
             </div>
         </div>
@@ -102,7 +99,7 @@
         <div class="row">
             <!-- buttons -->
             <div class="col s6" id="buttons">
-                <a class="waves-effect waves-light btn" id="convert">Convert</a>
+                <a class="waves-effect waves-light btn" id="convert">Show Recipe!</a>
                 <a class="waves-effect waves-light btn" id="reset">Reset</a>
             </div>
             <!-- result input -->
