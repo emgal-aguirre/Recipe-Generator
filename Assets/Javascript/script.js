@@ -77,7 +77,7 @@ $("#convert").on("click", function () {
       "Title:    " + response.hits[index].recipe.label
     )
     $("#recipeCalories").text(
-      "Calories:    " + response.hits[index].recipe.calories.Math.floor
+      "Calories:    " + response.hits[index].recipe.calories
     )
     $("#recipeIngredients").text(
       "Ingredients:    " + response.hits[index].recipe.ingredientLines
