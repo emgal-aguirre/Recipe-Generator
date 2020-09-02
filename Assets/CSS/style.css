@@ -1,8 +1,14 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: rgba(255, 255, 0, 0.507);
+    font-family: 'Libre Baskerville', serif;
+    background-image: url(cooking.jpg);
+    background-size: cover;
 }
 
+    /* This font changes the recipe contents to be easier to read */
+    p, h6 {
+    font-family: Arial, Helvetica, sans-serif
+    }
+    
     /* This is our styling for our NAVBAR */
     .nav-wrapper {
         background-color: black;
@@ -12,37 +18,10 @@ body {
         padding-left: 40px;
         padding-right: 40px;
     }
-
-        /* This is our styling for the frying pan logo on the navbar */
-        #pan {
-            float: left;
-            max-height: 60px;
-            padding-top: 5px;
-            padding-right: 20px;
-        }
-
-        /* This is the character styling in the NAVBAR */
+    /* This is the character styling in the NAVBAR */
         .left {
-            color: rgb(208, 253, 253);
+            color: white;
         }
-
-    /* This is our styling for the chef logo in the main body of the page */
-    #chef {
-        float: left;
-        margin-top: 40px;
-        margin-left: 50px;
-        height: 350px;
-        width: 200px;
-    }
-
-    /* This is our styling for the happy measuring cup */
-    #cup {
-        float: right;
-        margin-top: 40px;
-        margin-right: 30px;
-        height: 200px;
-        width: 250px;
-    }
 
     /* This is styling for the Measurement Conversion Calculator header and description container */
     #header {
@@ -56,7 +35,9 @@ body {
         border-width: 2px;
         border-style: solid;
         border-color: rgb(172, 172, 172);
-        background-color: rgb(208, 253, 253);
+        background-color: black;
+        opacity: .9;
+        color:white
     }
 
     /* This is styling for all the rows */
@@ -89,20 +70,6 @@ body {
             padding-top: 11px;
         }
 
-        /* This is styling for the "Convert to" prompt */
-        /* #convert-To {
-            padding-right: 100px;
-            float: left;
-            text-align: right;
-        } */
-
-        /* This is styling for the "Convert To Values drop down */
-        /* #convert-To-Values {
-            float: left;
-            width: 300px;
-            padding-top: 11px;
-        } */
-
         /* This is our button column styling */
         #buttons {
             text-align: right;
@@ -111,20 +78,16 @@ body {
 
         /* This is our Convert button styling */
         #convert {
-            color: black;
-            background-color: rgba(255, 255, 0, 0.507);
+            color: white;
+            background-color: black;
         }
 
         /* This is our Reset button styling */
         #reset {
-            color: black;
-            background-color: rgba(255, 255, 0, 0.507);
+            color: white;
+            background-color:black;
         }
 
-        /* This is our "Result" prompt styling */
-        /* #result {
-            text-align: left;
-        } */
 
         /* This is our returned results field styling */
         #resultField {
