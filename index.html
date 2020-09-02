@@ -12,44 +12,32 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
     <!-- Link to CSS -->
     <link rel="stylesheet" href="Assets/CSS/style.css" />
 
     <!-- Link to jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <title>Random Recipe</title>
+    <title>Recipe Generator</title>
 </head>
 
 <body>
     <!-- nav bar with logo & website -->
     <nav>
         <div class="nav-wrapper">
-            <!-- Frying pan logo for navbar -->
-            <!-- <<<<<<< HEAD  -->
-            <img src="Assets/Images/Cartoon Egg Frying Pan.jpg" id="pan" />
             <a href="#" class="left">randomrecipe.com</a>
-
+            <a id="currentDay" class="lead right"></a>
         </div>
     </nav>
 
-    <!-- Chef measuring ingredients logo for main body of page -->
-    <img src="Assets/Images/Cartoon Chef Following Instructions.jpg" id="chef" />
 
-    <!-- Happy measuring cup logo -->
-    <img src="Assets/Images/Cartoon Measuring Cup.jpg" id="cup" />
-
-    <!-- title and instructions -->
-    <!-- note this should be inside a bordered box -->
     <div class="container" id="header">
-        <h2>Random Recipe!</h2>
-        <h5>Choose a desired meal type to receive a random recipe!
-        </h5>
+        <h2>Random Recipe Generator!</h2>
+        <h6>Choose a desired meal type to receive a random recipe!
+        </h6>
     </div>
-
-
 
     <!-- value input and value drop downs container-->
     <div class="container" id="conversion">
@@ -94,11 +82,11 @@
             </div>
 
             <script type="text/javascript" src="https://materializecss.com/getting-started.html"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
             <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
             <!-- Link to Javascript -->
             <script src="Assets/Javascript/script.js"></script>
         </div>
-
 
 </body>
 
