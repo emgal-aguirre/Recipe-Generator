@@ -2,7 +2,7 @@
   Project One: Allyse Johnson, Chase Kilpatrick, Emily Aguirre & Greg Malone.
 
 Here is a link to the deployed website:
-https://emgal-aguirre.github.io/cooking-calculator/
+https://emgal-aguirre.github.io/Recipe-Generator/.
 
 
 # User-Story 
