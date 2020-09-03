@@ -42,9 +42,20 @@ $("#convert").on("click", function () {
     $("#recipeTitle").text(
       "Title:    " + response.hits[index].recipe.label
     )
+    $("#recipeYield").text(
+      "Yield:    " + response.hits[index].recipe.yield + " servings"
+    )
     $("#recipeCalories").text(
       "Calories:    " + response.hits[index].recipe.calories.toFixed(0)
     )
+
+    // Variable to perform math to divide calories by yield to provide calories per serving
+    var caloriesPer = response.hits[index].recipe.calories.toFixed(0) / response.hits[index].recipe.yield
+
+    $("#recipeCaloriesPerServing").text(
+      caloriesPer.toFixed(0) + " calories per serving"
+    )
+
     $("#recipeIngredients").text(
       "Ingredients:    " + response.hits[index].recipe.ingredientLines
     )
