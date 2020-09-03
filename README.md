@@ -20,6 +20,6 @@ APIs Used:
 2. Moment.Js (live date and time)
 
 # Here are screen shots of the website. 
-![ ](Assets/CSS/screenshot.png)
+![ ](Assets/CSS/screenshot1.png)
 
 
