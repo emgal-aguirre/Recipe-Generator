@@ -1,5 +1,5 @@
 # Random Recipe Generator
-  Project One: Allyse Johnson, Emily Aguirre, Greg Malone.
+  Project One: Allyse Johnson, Chase Kilpatrick, Emily Aguirre & Greg Malone.
 
 Here is a link to the deployed website:
 https://emgal-aguirre.github.io/cooking-calculator/
