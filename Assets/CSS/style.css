@@ -36,7 +36,7 @@ body {
         border-style: solid;
         border-color: rgb(172, 172, 172);
         background-color: black;
-        opacity: .9;
+        opacity: 0.9;
         color:white
     }
 
@@ -52,8 +52,9 @@ body {
         padding: 20px;
         border-width: 2px;
         border-style: solid;
-        border-color: rgb(172, 172, 172);
+        border-color: rgb(97, 97, 97);
         background-color: rgb(240, 253, 253);
+        opacity: 0.8;
     }
 
         /* This is styling for the "current value from" prompt */
@@ -91,8 +92,8 @@ body {
 
         /* This is our returned results field styling */
         #resultField {
+            width: 800px;
             padding-bottom: 30px;
-            padding-left: 75px;
         }
 
 
