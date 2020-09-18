@@ -19,7 +19,7 @@ APIs Used:
 1. Edamam (recipie generator) 
 2. Moment.Js (live date and time)
 
-# Here are screen shots of the website. 
+# Here is a screen shot of the website. 
 ![ ](Assets/CSS/screenshot1.png)
 
 
